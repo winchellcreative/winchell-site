@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hillcrest Animal Clinic · Case study | Winchell Creative</title>
+<meta name="description" content="A concept site for a vet clinic that cares for horses, dogs and cats under one roof.">
+<meta property="og:title" content="Hillcrest Animal Clinic · Case study | Winchell Creative">
+<meta property="og:description" content="A concept site for a vet clinic that cares for horses, dogs and cats under one roof.">
+<meta property="og:image" content="https://www.winchell.co/img/signature-top.jpg">
+<link rel="icon" type="image/png" href="../img/favicon.png">
+<link rel="apple-touch-icon" href="../img/apple-touch.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Inter:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../site.css">
+</head>
+<body>
+<div class="skybg" aria-hidden="true"></div><div class="sun" aria-hidden="true"></div><div class="stars" aria-hidden="true"></div>
+<div class="clouds" aria-hidden="true"><div class="cloud c1"></div><div class="cloud c2"></div><div class="cloud c3"></div></div>
+<div class="topbar">
+  <span class="pill"><span class="dot" aria-hidden="true"></span>available for projects</span>
+  <nav class="navc" aria-label="Main">
+    <a class="logo" href="../index.html"><img src="../img/kyle-avatar.jpg" alt="Winchell Creative home"></a>
+    <span class="brand">Winchell Creative</span>
+    <span class="links"><a href="../index.html#work">Work</a><a href="../index.html#about">About</a><a href="../index.html#pricing">Pricing</a><a href="../index.html#contact">Contact</a></span>
+    <a class="btn btn-navy" href="../index.html#contact">Get a quote</a>
+    <button class="burger" id="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="mnav"><span></span><span></span><span></span></button>
+  </nav>
+  <a class="pill" href="mailto:kyle@winchell.co"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>kyle@winchell.co</a>
+</div>
+<nav class="mnav" id="mnav" aria-label="Mobile"><a href="../index.html#work">Work</a><a href="../index.html#about">About</a><a href="../index.html#pricing">Pricing</a><a href="../index.html#contact">Contact</a><a href="../index.html#faq">FAQ</a><a href="../headache-finder.html">Headache Finder</a></nav>
+
+<style>
+.case-hero{padding:150px 0 40px}
+.back{display:inline-flex;align-items:center;gap:8px;font-weight:700;background:rgba(255,255,255,.7);backdrop-filter:blur(8px);border-radius:999px;padding:8px 16px;margin-bottom:28px}
+.case-hero h1{color:var(--ink);font-size:clamp(2.6rem,6.4vw,5.2rem);margin:6px 0 18px}
+.case-hero .lead{color:var(--ink2);font-size:clamp(1.1rem,1.8vw,1.35rem);max-width:36em}
+.case-hero .tags{margin-top:22px}
+.cframe{margin-top:44px;background:#fff;border-radius:24px;overflow:hidden;box-shadow:0 30px 80px rgba(20,24,50,.25)}
+.cframe .bar{display:flex;align-items:center;gap:6px;padding:14px 18px;background:#F4F3EF}
+.cframe .bar i{width:11px;height:11px;border-radius:50%;background:#E8675B}.cframe .bar i:nth-child(2){background:#E3A84B}.cframe .bar i:nth-child(3){background:#2FA866}
+.cframe .bar span{margin-left:12px;font-size:.82rem;color:var(--muted);background:#fff;border-radius:999px;padding:4px 14px}
+.cscroll{max-height:78vh;overflow:auto}
+.cscroll img{width:100%}
+.cgrid2{display:grid;grid-template-columns:.8fr 1fr 1fr;gap:20px;margin-top:40px}
+.gi{padding:14px;display:flex;align-items:center;justify-content:center;border-radius:22px}
+.gi img{width:100%;border-radius:14px}
+.gi.tall{grid-row:span 2}
+.gi.wide{grid-column:1/-1}
+.gi.wide2{grid-column:2/4}
+.gi.ph img{max-width:340px}
+.gi.narrowimg img{max-width:720px}
+@media (max-width:760px){.cgrid2{grid-template-columns:1fr!important}.gi.wide2{grid-column:auto}.gi.tall{grid-row:auto}.gi.tall img{max-width:320px}}
+.cscroll img,.cframe{border-radius:18px}
+.cgal{margin-top:26px;padding:30px;display:grid;grid-template-columns:1fr 1.3fr;gap:24px;align-items:center}
+.gphones{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.gphones img,.gwide{width:100%;border-radius:14px}
+.gcap{grid-column:1/-1;text-align:center;color:var(--muted);margin-top:4px}
+@media (max-width:760px){.cgal{grid-template-columns:1fr;padding:18px}}
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:26px}
+.cbox{padding:32px}
+.cbox .eyebrow{color:var(--muted)}
+.cbox h2{font-size:clamp(1.6rem,3vw,2.2rem);margin-bottom:12px}
+.cbox p{color:var(--muted);font-size:1.06rem}
+.cbox ul{list-style:none;display:grid;gap:12px}
+.cbox li{display:flex;gap:12px;align-items:flex-start;font-weight:500}
+.cbox li svg{flex:none;margin-top:1px}
+.cres{grid-column:1/-1;background:var(--navy);color:#fff}
+.cres p{color:#fff;font-size:clamp(1.3rem,2.4vw,1.8rem);font-weight:700;letter-spacing:-.03em;line-height:1.3}
+.cres .eyebrow{color:#AEB6C8}
+.cq{grid-column:1/-1;padding:32px}
+.cq p{font-size:1.2rem;font-weight:600;margin:6px 0 18px}
+.cq .who{display:flex;align-items:center;gap:12px}.cq .who img{width:48px;height:48px;border-radius:50%}.cq .who small{display:block;color:var(--muted)}
+.cq .stars5{color:var(--gold);letter-spacing:2px}
+.cactions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.nextp{margin-top:70px}
+.nextp .eyebrow{color:var(--ink2)}
+.nextp .wcard{max-width:620px}
+@media (max-width:760px){.cgrid{grid-template-columns:1fr}.case-hero{padding-top:110px}.cbox{padding:24px}}
+</style>
+<main id="top">
+<section class="case-hero">
+  <div class="wrap">
+    <a class="back" href="../index.html#work">← All work</a>
+    <span class="eyebrow" style="display:block">concept</span>
+    <h1>Hillcrest Animal Clinic</h1>
+    <p class="lead">A concept site for a vet clinic that cares for horses, dogs and cats under one roof.</p>
+    <div class="tags"><span class="cpt">Concept</span><span class="">Vet clinic</span></div>
+    <div class="cframe reveal"><div class="bar"><i></i><i></i><i></i><span>hillcrest concept</span></div><div class="cscroll"><img src="../img/hillcrest-full.jpg" alt="Full Hillcrest Animal Clinic homepage"></div></div>
+    
+    <div class="cgrid">
+      <div class="card cbox reveal"><span class="eyebrow">the challenge</span><h2>Where it started</h2><p>An outdated site that didn&#x27;t show how much the clinic does, or make booking a visit easy.</p></div>
+      <div class="card cbox reveal d1"><span class="eyebrow">what i did</span><h2>What I built</h2><ul><li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2FA866" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="rgba(47,168,102,.12)" stroke="none"/><path d="M7.5 12.5l3 3 6-6.5"/></svg>A warm, clear homepage</li><li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2FA866" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="rgba(47,168,102,.12)" stroke="none"/><path d="M7.5 12.5l3 3 6-6.5"/></svg>Easy &quot;Book a visit&quot; and call buttons</li><li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2FA866" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="rgba(47,168,102,.12)" stroke="none"/><path d="M7.5 12.5l3 3 6-6.5"/></svg>Services organized by animal</li></ul></div>
+      <div class="card cbox cres reveal"><span class="eyebrow">the result</span><p>A concept that makes the clinic feel as friendly online as it is in person.</p></div>
+      
+    </div>
+    <div class="cactions"><a class="btn btn-navy" href="https://claude.ai/artifact/3kbhtC1XnkdnfGVYEtwDcS" target="_blank" rel="noopener">See the full concept ↗</a><a class="btn btn-glass" href="../index.html#contact">Start a project like this</a></div>
+    <div class="nextp"><span class="eyebrow" style="display:block">next project</span><a class="wcard " href="../work/haven.html"><div class="bar"><i></i><i></i><i></i><span>havenspiritualcare.org</span></div><div class="shot"><img src="../img/haven-top.jpg" alt="Haven Spiritual Care website" loading="lazy"></div><div class="wmeta"><div><h3>Haven Spiritual Care</h3><div class="tags"><span class="">New practice launch</span><span class="">Automated forms</span><span class="win"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg>Booking new clients</span></div></div><span class="go">Case study <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div></a></div>
+  </div>
+</section>
+<div style="height:120px"></div>
+<section class="night">
+  <div class="final wrap reveal">
+    <h2>Let's build <span class="thin">something great.</span></h2>
+    <p>Websites, systems and stories, from one person who cares how it turns out.</p>
+    <div class="ctas"><a class="btn btn-white" href="../index.html#contact">Get a free quote</a><a class="btn btn-line2" href="sms:4025704788">Text 402-570-4788</a></div>
+  </div>
+  <div class="scene" aria-hidden="true">
+    <div class="moon"></div>
+    <svg class="trees" viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0 120 L0 78 Q30 60 52 72 Q70 48 96 66 Q118 44 140 64 Q170 52 196 70 Q226 40 252 62 Q280 56 300 70 Q340 46 372 66 Q402 58 430 72 Q470 50 500 68 Q540 60 560 74 Q600 54 640 72 Q690 64 720 76 Q760 56 800 70 Q840 50 880 68 Q910 60 940 72 Q980 44 1016 64 Q1050 56 1080 70 Q1120 40 1150 62 Q1180 54 1210 68 Q1250 48 1290 66 Q1330 58 1360 70 Q1400 52 1440 66 L1440 120Z" fill="#070C20"/></svg>
+    <div class="lake"><div class="glint"><i style="--w:60px;--d:0s;--o:0.9"></i><i style="--w:90px;--d:0.6s;--o:0.8"></i><i style="--w:46px;--d:1.2s;--o:0.7"></i><i style="--w:120px;--d:0.3s;--o:0.75"></i><i style="--w:70px;--d:0.9s;--o:0.6"></i><i style="--w:150px;--d:1.5s;--o:0.55"></i><i style="--w:54px;--d:0.4s;--o:0.5"></i><i style="--w:180px;--d:1.1s;--o:0.45"></i><i style="--w:80px;--d:0.7s;--o:0.4"></i><i style="--w:210px;--d:1.8s;--o:0.35"></i></div><svg class="kayak k1" viewBox="0 0 200 60" aria-hidden="true"><path d="M8 44 Q100 58 192 44 Q100 50 8 44Z" fill="#05091A"/><path d="M14 44 Q100 52 186 44" stroke="rgba(120,200,190,.6)" stroke-width="1.4" fill="none"/><circle cx="104" cy="22" r="6" fill="#05091A"/><path d="M97 44 Q98 30 104 29 Q111 30 112 44Z" fill="#05091A"/><path d="M70 50 L142 14" stroke="#05091A" stroke-width="3" stroke-linecap="round"/><path d="M64 52 l10 -4 M136 16 l10 -4" stroke="#05091A" stroke-width="6" stroke-linecap="round"/></svg><svg class="kayak k2" viewBox="0 0 200 60" aria-hidden="true" style="transform:scaleX(-1)"><path d="M8 44 Q100 58 192 44 Q100 50 8 44Z" fill="#05091A"/><path d="M14 44 Q100 52 186 44" stroke="rgba(120,200,190,.6)" stroke-width="1.4" fill="none"/><circle cx="104" cy="22" r="6" fill="#05091A"/><path d="M97 44 Q98 30 104 29 Q111 30 112 44Z" fill="#05091A"/><path d="M70 50 L142 14" stroke="#05091A" stroke-width="3" stroke-linecap="round"/><path d="M64 52 l10 -4 M136 16 l10 -4" stroke="#05091A" stroke-width="6" stroke-linecap="round"/></svg><svg class="kayak k3" viewBox="0 0 200 60" aria-hidden="true"><path d="M8 44 Q100 58 192 44 Q100 50 8 44Z" fill="#05091A"/><path d="M14 44 Q100 52 186 44" stroke="rgba(120,200,190,.6)" stroke-width="1.4" fill="none"/><circle cx="104" cy="22" r="6" fill="#05091A"/><path d="M97 44 Q98 30 104 29 Q111 30 112 44Z" fill="#05091A"/><path d="M70 50 L142 14" stroke="#05091A" stroke-width="3" stroke-linecap="round"/><path d="M64 52 l10 -4 M136 16 l10 -4" stroke="#05091A" stroke-width="6" stroke-linecap="round"/></svg></div>
+  </div>
+  <footer><div class="wrap"><div class="foot">
+    <div><b>Built by Kyle</b>© 2026 Winchell Creative · Lincoln, Nebraska</div>
+    <nav class="flinks" aria-label="Footer"><a href="../index.html#work">Work</a><a href="../index.html#about">About</a><a href="../index.html#pricing">Pricing</a><a href="../index.html#faq">FAQ</a><a href="../headache-finder.html">Headache Finder</a><a href="../index.html#contact">Contact</a></nav>
+    <div><a href="mailto:kyle@winchell.co">kyle@winchell.co</a> · <a href="tel:4025704788">402-570-4788</a></div>
+  </div></div></footer>
+</section>
+
+</main>
+<script>(function(){try{history.scrollRestoration='manual'}catch(e){}if(location.hash)return;var h=document.documentElement;function top(){h.style.scrollBehavior='auto';window.scrollTo({top:0,left:0,behavior:'instant'});h.scrollTop=0;document.body&&(document.body.scrollTop=0);}top();document.addEventListener('DOMContentLoaded',top);addEventListener('load',function(){top();requestAnimationFrame(top);setTimeout(function(){top();h.style.scrollBehavior='';},60);});addEventListener('pageshow',function(e){if(e.persisted)top();});})();</script>
+<script src="../site.js"></script>
+</body>
+</html>
