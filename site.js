@@ -57,7 +57,7 @@
 
   /* mobile reviews: auto-scroll + swipe */
   var rs=$('#revs');
-  if (rs && matchMedia('(max-width:760px)').matches && !reduce){
+  if (false && rs){
     var hold=false, rt; var half=function(){ return rs.querySelector('.rg').offsetWidth; };
     ['touchstart','pointerdown'].forEach(function(ev){ rs.addEventListener(ev,function(){ hold=true; clearTimeout(rt); },{passive:true}); });
     ['touchend','pointerup'].forEach(function(ev){ rs.addEventListener(ev,function(){ clearTimeout(rt); rt=setTimeout(function(){ hold=false; },2500); },{passive:true}); });
