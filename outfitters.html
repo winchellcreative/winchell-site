@@ -7,7 +7,10 @@
 <meta name="description" content="Websites for kayak, canoe, tubing and paddleboard outfitters, from someone who ran one. Easy booking for customers, calmer Saturdays for your team, connected to Peek, FareHarbor or what you already use.">
 <meta property="og:title" content="Websites for Outfitters + Tour Operators | Winchell Creative">
 <meta property="og:description" content="Websites for kayak, canoe, tubing and paddleboard outfitters, from someone who ran one. Easy booking for customers, calmer Saturdays for your team, connected to Peek, FareHarbor or what you already use.">
-<meta property="og:image" content="https://www.winchell.co/img/lpc-mockup.jpg">
+<meta property="og:image" content="https://www.winchell.co/img/og-outfitters.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Winchell Creative">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://www.winchell.co/img/og-outfitters.jpg">
 <link rel="icon" type="image/png" href="img/favicon.png">
 <link rel="apple-touch-icon" href="img/apple-touch.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,6 +44,24 @@
 #easier .ezs{grid-template-columns:1fr;max-width:760px;margin-left:auto;margin-right:auto}
 #easier .ez-pane{touch-action:pan-y}
 .swipehint{text-align:center;color:var(--ink2);font-size:.9rem;margin-top:14px}
+/* before -> after pairs */
+.bas{display:grid;gap:30px;margin-top:44px;max-width:1040px;margin-left:auto;margin-right:auto}
+.ba-row{display:grid;grid-template-columns:1fr 44px 1fr;gap:0 10px;align-items:stretch}
+.ba-lab{grid-column:1/-1;margin-bottom:14px}
+.ba-card{border-radius:22px;padding:24px 26px 26px;box-shadow:0 2px 0 rgba(20,24,50,.06),0 14px 34px rgba(20,24,50,.16)}
+.ba-card h3{font-size:clamp(1.25rem,2vw,1.55rem);letter-spacing:-.035em;margin:12px 0 14px}
+.ba-card ul{list-style:none;display:grid;gap:10px}
+.ba-card li{display:flex;align-items:center;gap:10px;font-weight:600}
+.ba-card li i{flex:none;width:24px;height:24px;border-radius:50%;display:grid;place-items:center}
+.ba-card.bef{background:rgba(255,255,255,.78);color:#4A5268}
+.ba-card.bef h3{color:#3A4258}
+.ba-card.bef li i{background:rgba(194,65,47,.14);color:#C2412F}
+.ba-card.aft{background:#fff;color:var(--navy);outline:3px solid rgba(47,168,102,.55);outline-offset:-3px}
+.ba-card.aft li i{background:rgba(47,168,102,.15);color:#2FA866}
+.ba-pill{display:inline-block;font-size:.78rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;border-radius:999px;padding:4px 12px;color:#fff}
+.ba-pill.b{background:#C2412F}.ba-pill.a{background:#2FA866}
+.ba-arrow{align-self:center;justify-self:center;width:44px;height:44px;border-radius:50%;background:var(--gold);color:var(--navy);display:grid;place-items:center;font-weight:800;font-size:1.3rem;box-shadow:0 8px 20px rgba(20,24,50,.2)}
+@media (max-width:760px){.ba-row{grid-template-columns:1fr}.ba-arrow{transform:rotate(90deg);margin:-6px auto;position:relative;z-index:2;width:40px;height:40px}.ba-card{padding:20px}}
 /* finder */
 .hf{max-width:760px;margin:44px auto 0}
 .hf-grid{display:grid;grid-template-columns:1fr;gap:20px}
@@ -124,7 +145,7 @@ details.hf-as[open] summary i{transform:rotate(45deg);background:var(--navy);col
   </nav>
   <a class="pill" href="mailto:kyle@winchell.co"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>kyle@winchell.co</a>
 </div>
-<nav class="mnav" id="mnav" aria-label="Mobile"><a href="#story">My story</a><a href="#finder">Headache Finder</a><a href="#setup">What I set up</a><a href="#pricing">Pricing</a><a href="#contact">Contact</a><a href="index.html">All my work</a></nav>
+<nav class="mnav" id="mnav" aria-label="Mobile"><a href="#story">My story</a><a href="#finder">Headache Finder</a><a href="#setup">What runs behind it</a><a href="#pricing">Pricing</a><a href="#contact">Contact</a><a href="index.html">All my work</a></nav>
 
 <main id="top">
 
@@ -132,8 +153,8 @@ details.hf-as[open] summary i{transform:rotate(45deg);background:var(--navy);col
 <section class="hero">
   <div class="wrap">
     <p class="hi">Hi, I'm Kyle.</p>
-    <h1><span>I fix website and booking</span><span><u>headaches</u> for outfitters.</span></h1>
-    <p class="lead">From someone who ran one. Your site books trips while you're on the water, and Saturdays at the put-in get a lot calmer.</p>
+    <h1><span>I help outfitters book more trips</span><span>with less <u>chaos.</u></span></h1>
+    <p class="lead">Websites and booking setups from someone who ran an outfitter. Easy for customers to book, and easy for your crew to run, even on your busiest days.</p>
     <div class="ctas"><a class="btn btn-navy av" href="#finder"><img src="img/kyle-avatar.jpg" alt="">Find your headaches</a><a class="btn btn-glass" href="#contact">Get a quote</a></div>
   </div>
   <div class="fan"><a class="fc f0" href="work/braska.html" aria-label="Braska Baits"><span class="fbar"><i></i><i></i><i></i></span><img src="img/braska-top.jpg" alt=""><span class="flabel">Braska Baits</span></a><a class="fc f1" href="#story" aria-label="Float Nebraska"><span class="fbar"><i></i><i></i><i></i></span><img src="img/film-float.jpg" alt="" style="object-position:center"><span class="flabel">Float Nebraska</span></a><a class="fc f2" href="work/lpc.html" aria-label="Lincoln Paddle Co"><span class="fbar"><i></i><i></i><i></i></span><img src="img/lpc-top.jpg" alt=""><span class="flabel">Lincoln Paddle Co</span></a><a class="fc f3" href="work/lpc.html" aria-label="Site + Instagram"><span class="fbar"><i></i><i></i><i></i></span><img src="img/lpc-mockup.jpg" alt="" style="object-position:center"><span class="flabel">Site + Instagram</span></a><a class="fc f4" href="work/driven.html" aria-label="Driven Academy"><span class="fbar"><i></i><i></i><i></i></span><img src="img/driven-top.jpg" alt=""><span class="flabel">Driven Academy</span></a></div>
@@ -145,16 +166,16 @@ details.hf-as[open] summary i{transform:rotate(45deg);background:var(--navy);col
 <!-- 3 STORY -->
 <section class="sec" id="story" style="padding-top:60px">
   <div class="wrap">
-    <div class="center reveal"><h2 class="sec-h">I've been in your shoes.</h2><p class="sec-sub">I'm not a web guy who discovered outfitters. I ran one.</p></div>
+    <div class="center reveal"><h2 class="sec-h">I know your Saturday mornings.</h2><p class="sec-sub">Because I lived them, running an outfitter of my own.</p></div>
     <div class="ostory">
       <div class="card reveal">
         <span class="eyebrow" style="color:var(--muted)">lincoln paddle co</span>
         <figure class="mepola"><img src="img/pola-me.jpg" alt="Kyle Winchell"><figcaption>that's me!</figcaption></figure>
-        <h3>From zero to 7,000 paddlers.</h3>
-        <p>I started Lincoln Paddle Co from scratch, with no budget and no audience, on lakes in Nebraska. It grew to <b>7,000 customers</b> and <b>500+ five-star reviews</b>.</p>
-        <p>We ran on Peek Pro, and upsells were a big reason we did well. I know the Saturday morning chaos at the put-in: phones ringing, a line at the waiver table, a storm rolling in.</p>
-        <p>So I build sites that handle the booking and the busywork, so you can be on the water.</p>
-        <a class="lnk" href="work/lpc.html">Read the Lincoln Paddle Co story <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <h3>You know the feeling.</h3>
+        <p>Phones ringing. A line at the waiver table. A storm rolling in with the shuttle already loaded.</p>
+        <p>At Lincoln Paddle Co, what changed everything was simple: make booking easy for customers, and let the busywork run itself. On Peek Pro, with smart upsells, we grew to <b>7,000 customers</b> and <b>500+ five-star reviews</b>.</p>
+        <p>That's what your site should do for you: fill your trips and give you your day back.</p>
+        <a class="lnk" href="work/lpc.html">See how Lincoln Paddle Co did it <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </div>
       <button type="button" class="film reveal d1" data-yt="KuvNK1MiYLE" aria-label="Play Float Nebraska"><span class="fthumb" style="background-image:url('img/film-float.jpg'),linear-gradient(135deg,#2E4596,#1E2841)"><span class="fplay"><svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15l13-7.5z"/></svg></span><span class="ftag">Documentary</span></span><span class="fmeta"><b>Float Nebraska</b><span>Ten float trips across Nebraska. I planned the trips, shot and edited the film, and filled a local theater for the premiere.</span><span class="chipsg"><i>10 float trips</i><i>Filled a theater</i></span></span></button>
     </div>
@@ -164,21 +185,24 @@ details.hf-as[open] summary i{transform:rotate(45deg);background:var(--navy);col
 <!-- 4 EASIER -->
 <section class="sec" id="easier" style="padding-top:40px">
   <div class="wrap">
-    <div class="center reveal"><h2 class="sec-h">Easier for them. <span class="thin">Easier for you.</span></h2><p class="sec-sub">Most outfitter sites only fix the first one. I fix both.</p></div>
-    <div class="ezs">
-      <div class="ez cust reveal" data-noauto="1"><div class="ez-top"><span class="ez-tag"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>For your customers</span><div class="ez-sw" role="group" aria-label="Before or after"><button type="button" data-v="b" class="on" aria-pressed="true">Before</button><button type="button" data-v="a" aria-pressed="false">After</button></div></div>
-        <div class="ez-panes"><div class="ez-pane pb"><h3>Confusing trips. Buried booking.</h3><ul><li><i class="x"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></i>Not sure which trip is right</li><li><i class="x"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></i>Booking takes too many taps</li><li><i class="x"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></i>Waivers at the check-in line</li></ul></div><div class="ez-pane pa"><h3>They pick the right trip and book in one tap.</h3><ul><li><i class="c"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i>Trips compared side by side</li><li><i class="c"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i>Book Now on every page</li><li><i class="c"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i>Waiver, reminder and meeting spot sent for you</li></ul></div></div></div>
-      <div class="ez team reveal" data-noauto="1"><div class="ez-top"><span class="ez-tag"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2 21a7 7 0 0 1 14 0"/><path d="M16 4.5a3.5 3.5 0 0 1 0 7M22 21a7 7 0 0 0-5-6.7"/></svg>For your team</span><div class="ez-sw" role="group" aria-label="Before or after"><button type="button" data-v="b" class="on" aria-pressed="true">Before</button><button type="button" data-v="a" aria-pressed="false">After</button></div></div>
-        <div class="ez-panes"><div class="ez-pane pb"><h3>Phones ringing all Saturday.</h3><ul><li><i class="x"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></i>"Do you have openings?" all day</li><li><i class="x"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></i>Rebooking every time it storms</li><li><i class="x"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></i>Chasing waivers and headcounts</li></ul></div><div class="ez-pane pa"><h3>The busywork runs itself.</h3><ul><li><i class="c"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i>Bookings, waivers and reminders handled</li><li><i class="c"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i>Weather updates sent in one click</li><li><i class="c"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i>One clear daily manifest</li></ul></div></div></div>
+    <div class="center reveal"><h2 class="sec-h">Easier for them. <span class="thin">Easier for you.</span></h2><p class="sec-sub">Most outfitter sites only fix the first one. The right setup fixes both.</p></div>
+    <div class="bas">
+      <div class="ba-row reveal"><div class="ba-lab"><span class="ez-tag"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>For your customers</span></div>
+      <div class="ba-card bef"><span class="ba-pill b">Before</span><h3>Confusing trips. Buried booking.</h3><ul><li><i class="x"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></i>Not sure which trip is right</li><li><i class="x"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></i>Booking takes too many taps</li><li><i class="x"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></i>Waivers at the check-in line</li></ul></div>
+      <div class="ba-arrow" aria-hidden="true">→</div>
+      <div class="ba-card aft"><span class="ba-pill a">After</span><h3>They pick the right trip and book in one tap.</h3><ul><li><i class="c"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i>Trips compared side by side</li><li><i class="c"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i>Book Now on every page</li><li><i class="c"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i>Waiver, reminder and meeting spot sent automatically</li></ul></div></div>
+      <div class="ba-row reveal"><div class="ba-lab"><span class="ez-tag"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2 21a7 7 0 0 1 14 0"/><path d="M16 4.5a3.5 3.5 0 0 1 0 7M22 21a7 7 0 0 0-5-6.7"/></svg>For your team</span></div>
+      <div class="ba-card bef"><span class="ba-pill b">Before</span><h3>Phones ringing all Saturday.</h3><ul><li><i class="x"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></i>"Do you have openings?" all day</li><li><i class="x"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></i>Rebooking every time it storms</li><li><i class="x"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></i>Chasing waivers and headcounts</li></ul></div>
+      <div class="ba-arrow" aria-hidden="true">→</div>
+      <div class="ba-card aft"><span class="ba-pill a">After</span><h3>The busywork runs itself.</h3><ul><li><i class="c"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i>Bookings, waivers and reminders handled</li><li><i class="c"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i>Weather updates sent in one click</li><li><i class="c"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i>One clear daily manifest</li></ul></div></div>
     </div>
-    <p class="swipehint reveal">Swipe or tap Before / After to flip.</p>
   </div>
 </section>
 
 <!-- 5 FINDER -->
 <section class="sec" id="finder" style="padding-top:40px">
   <div class="wrap">
-    <div class="center reveal"><h2 class="sec-h">Find your <span class="thin">headaches.</span></h2><p class="sec-sub">Tap what sounds familiar. You'll see your top three, what fixing each looks like, and what they're costing you. About 2 minutes.</p></div>
+    <div class="center reveal"><h2 class="sec-h">Find your <span class="thin">headaches.</span></h2><p class="sec-sub">Tap what sounds familiar. See what's making it harder for people to book with you, and harder for your team to run the day, plus what fixing it looks like. About 2 minutes.</p></div>
     <div class="hf">
       <div class="hf-grid">
         <div class="hf-card reveal"><span class="ez-tag"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>For your customers</span><h3>What do they run into?</h3><p class="sub">Tap anything that sounds familiar.</p><div class="hf-chips" id="hf-c"></div></div>
@@ -218,7 +242,7 @@ details.hf-as[open] summary i{transform:rotate(45deg);background:var(--navy);col
 <!-- 6 SETUP -->
 <section class="sec" id="setup" style="padding-top:40px">
   <div class="wrap">
-    <div class="center reveal"><h2 class="sec-h">What I set up</h2><p class="sec-sub">Connected to the booking platform you already use. No starting over.</p></div>
+    <div class="center reveal"><h2 class="sec-h">What runs behind your site</h2><p class="sec-sub">Connected to the booking platform you already use. No starting over.</p></div>
     <div class="steps"><div class="wy reveal d1"><h3><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18M9 16l2 2 4-4"/></svg>Your booking platform, connected</h3><p>Peek, FareHarbor or whatever you use. Live times on your site and a Book Now button that just works.</p></div><div class="wy reveal d2"><h3><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg>Upsells at checkout</h3><p>Photos, snacks, dry bags, gear. Add-ons that sell on every booking without you asking.</p></div><div class="wy reveal d3"><h3><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 14l2 2 4-4"/></svg>Waivers + reminders</h3><p>Waivers signed at booking. A reminder the day before with the time, meeting spot and what to bring.</p></div><div class="wy reveal d1"><h3><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>Google Business Profile</h3><p>Hours, photos, trips and a booking link, so you show up right when people search "kayak rentals near me."</p></div><div class="wy reveal d2"><h3><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>Review requests</h3><p>A friendly ask the evening after every trip, while the sunburn and the smiles are still fresh.</p></div><div class="wy reveal d3"><h3><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>An off-season email</h3><p>A simple plan to bring last year's paddlers back next summer, with early-bird dates and gift cards.</p></div></div>
   </div>
 </section>
